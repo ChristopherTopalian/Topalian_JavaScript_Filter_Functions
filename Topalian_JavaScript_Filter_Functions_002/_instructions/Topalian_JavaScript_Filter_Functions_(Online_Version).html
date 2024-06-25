@@ -1,14 +1,9 @@
 <!-- Dedicated to God the Father -->
-
 <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024 -->
-
 <!-- https://github.com/ChristopherTopalian -->
-
 <!-- https://github.com/ChristopherAndrewTopalian -->
-
-<!-- Topalian_JavaScript_Filter_Functions.html -->
-
-<!-- Version 001 - (2024-05-23) -->
+<!-- Topalian_JavaScript_Filter_Functions_(Online_Version).html -->
+<!-- Version 002 - (2024-06-25) -->
 
 <html>
 <head>
@@ -17,13 +12,9 @@
 <style>
 
 /* Dedicated to God the Father */
-
 /* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024 */
-
 /* https://github.com/ChristopherTopalian */
-
 /* https://github.com/ChristopherAndrewTopalian */
-
 /* style001.css */
 
 body
@@ -142,56 +133,41 @@ input:active
 <script>
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // shortcuts.js
 
 function ge(whichId)
 {
     let result = document.getElementById(whichId);
-
     return result;
 }
 
 function ce(whichType)
 {
     let result = document.createElement(whichType);
-
     return result;
 }
 
 function ba(whichElement)
 {
     let result = document.body.append(whichElement);
-
     return result;
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // worldVariables.js
 
 let online = true;
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // people.js
 
 let people =
@@ -213,13 +189,9 @@ let people =
 ];
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // theFunctions.js
 
 let theFunctions =
@@ -286,13 +258,9 @@ let theFunctions =
 ];
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // filterAfterDate.js
 
 function filterAfterDate(whichArray, whichDate)
@@ -301,7 +269,7 @@ function filterAfterDate(whichArray, whichDate)
 
     for (let z = 0; z < whichArray.length; z++)
     {
-        if (people[z].date > whichDate)
+        if (whichArray[z].date > whichDate)
         {
             result.push(whichArray[z]);
         }
@@ -311,13 +279,9 @@ function filterAfterDate(whichArray, whichDate)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // filterBeforeDate.js
 
 function filterBeforeDate(whichArray, whichDate)
@@ -326,7 +290,7 @@ function filterBeforeDate(whichArray, whichDate)
 
     for (let z = 0; z < whichArray.length; z++)
     {
-        if (people[z].date < whichDate)
+        if (whichArray[z].date < whichDate)
         {
             result.push(whichArray[z]);
         }
@@ -336,13 +300,9 @@ function filterBeforeDate(whichArray, whichDate)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // filterByDate.js
 
 function filterByDate(whichArray, whichDate)
@@ -363,13 +323,9 @@ function filterByDate(whichArray, whichDate)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // filterByDateTime.js
 
 function filterByDateTime(whichArray, whichDate)
@@ -388,13 +344,9 @@ function filterByDateTime(whichArray, whichDate)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // filterByMonth.js
 
 function filterByMonth(whichArray, whichMonth)
@@ -403,7 +355,7 @@ function filterByMonth(whichArray, whichMonth)
 
     for (let z = 0; z < whichArray.length; z++)
     {
-        let parts = people[z].date.split('/');
+        let parts = whichArray[z].date.split('/');
 
         if (parts[1] === whichMonth)
         {
@@ -415,13 +367,9 @@ function filterByMonth(whichArray, whichMonth)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // filterByMonthDay.js
 
 function filterByMonthDay(whichArray, whichMonth, whichDay)
@@ -457,13 +405,9 @@ function filterByMonthDay(whichArray, whichMonth, whichDay)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // filterByName.js
 
 function filterByName(whichArray, whichName)
@@ -482,13 +426,9 @@ function filterByName(whichArray, whichName)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // filterByYear.js
 
 function filterByYear(whichArray, whichYear)
@@ -497,7 +437,7 @@ function filterByYear(whichArray, whichYear)
 
     for (let z = 0; z < whichArray.length; z++)
     {
-        if (people[z].date.startsWith(whichYear))
+        if (whichArray[z].date.startsWith(whichYear))
         {
             result.push(whichArray[z]);
         }
@@ -507,13 +447,9 @@ function filterByYear(whichArray, whichYear)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // filterByYearMonth.js
 
 function filterByYearMonth(whichArray, whichYearMonth)
@@ -522,7 +458,7 @@ function filterByYearMonth(whichArray, whichYearMonth)
 
     for (let z = 0; z < whichArray.length; z++)
     {
-        if (people[z].date.startsWith(whichYearMonth))
+        if (whichArray[z].date.startsWith(whichYearMonth))
         {
             result.push(whichArray[z]);
         }
@@ -532,13 +468,9 @@ function filterByYearMonth(whichArray, whichYearMonth)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // showAll.js
 
 function showAll(whichArray)
@@ -554,13 +486,9 @@ function showAll(whichArray)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // showAllDates.js
 
 function showAllDates(whichArray)
@@ -576,13 +504,9 @@ function showAllDates(whichArray)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // showAllNames.js
 
 function showAllNames(whichArray)
@@ -598,13 +522,9 @@ function showAllNames(whichArray)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // makeCenterContainer.js
 
 function makeCenterContainer()
@@ -617,6 +537,8 @@ function makeCenterContainer()
     centerContainer.style.top = '2px';
     centerContainer.style.overflowX = 'scroll';
     ba(centerContainer);
+
+    //-//
 
     // originalArrayLabel
     let originalArrayLabel = ce('div');
@@ -666,13 +588,9 @@ function makeCenterContainer()
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // makeInputs.js
 
 function makeInputs(whichArray)
@@ -717,17 +635,12 @@ function makeInputs(whichArray)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // makeMenuLeft.js
 
 // makes our menu of buttons using the array of objects named theFunctions
-
 function makeMenuLeft(whichArray)
 {
     let nameSpace = 'leftMenu_';
@@ -779,17 +692,13 @@ function makeMenuLeft(whichArray)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // makeMenuRight.js
 
-// makes our menu of buttons without using an array of objects
-
+// makes our menu of buttons
+// without using an array of objects
 function makeMenuRight()
 {
     let nameSpace = 'rightMenu_';
@@ -1056,13 +965,9 @@ function makeMenuRight()
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // makeTitleOfApp.js
 
 function makeTitleOfApp()
@@ -1087,13 +992,9 @@ function makeTitleOfApp()
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // resizeElements.js
 
 function resizeElements()
@@ -1111,13 +1012,9 @@ window.onresize = function()
 };
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // audioPlay.js
 
 function audioPlay(whichId, whichVolume)
@@ -1132,13 +1029,9 @@ function audioPlay(whichId, whichVolume)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // loadSounds.js
 
 function loadSounds(whichArray)
@@ -1164,13 +1057,9 @@ function loadSounds(whichArray)
 }
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // sounds.js
 
 let sounds =
@@ -1189,13 +1078,9 @@ let sounds =
 ];
 
 // Dedicated to God the Father
-
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
-
 // https://github.com/ChristopherTopalian
-
 // https://github.com/ChristopherAndrewTopalian
-
 // whenLoaded.js
 
 function whenLoaded()
